@@ -21,7 +21,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0, 50px;
     box-sizing: border-box;
 }
 
@@ -121,7 +121,22 @@ a {
     margin-bottom: 5px;
 }
 
+/*footer*/
 
+.section-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color: #F2F2F2;
+    max-width: 1340px;
+}
+
+.menu-footer {
+    max-width: 446.67px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
