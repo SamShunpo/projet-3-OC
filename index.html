@@ -17,7 +17,7 @@
 <body>
     <div class="main-container">
         <header></header>
-        <main>
+        <main class="main-container">
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <h2>Hébergements à Marseille</h2>
@@ -88,59 +88,53 @@
                     </div>
                 </section>
             </div>
-            <section>
-                <div>
-                    <h2 class="section-title activites-title-h2">Activités à Marseille</h2>
-                </div>
-                <div class="activites-block-cards">
-                    <a href="#" class="activites-a">
-                        <article class="activites-cards">
-                            <img src="./images/activites/reno-laithienne.jpg" class="img-cards" alt="Image montrant des bateaux dans le vieux port de Marseille">
-                            <div class="activites-div">
-                                <h3 class="card-title activites-title">Vieux-Port</h3>
-                            </div>
-                        </article>
+            <section class="activites-section display-flex gap-30">
+                <h2 class="section-title">Activités à Marseille</h2>
+                <div class="display-flex gap-30">
+                    <a href="#" class="activites-cards">
+                        <img src="./images/activites/reno-laithienne.jpg" class="img-cards" alt="Image montrant des bateaux dans le vieux port de Marseille">
+                        <div class="activites-div">
+                            <h3 class="card-title activites-title">Vieux-Port</h3>
+                        </div>
                     </a>
-                    <a href="#" class="activites-a">
-                        <article class="activites-cards">
-                            <img src="./images/activites/paul-hermann.jpg" class="img-cards" alt="Image du fort de Pomègues vue depuis les rochers">
-                            <h3 class="card-title">Fort de Pomègues</h3>
-                        </article>
+                    <a href="#" class="activites-cards">
+                        <img src="./images/activites/paul-hermann.jpg" class="img-cards" alt="Image du fort de Pomègues vue depuis les rochers">
+                        <div class="activites-div">
+                            <h3 class="card-title activites-title">Fort de Pomègues</h3>
+                        </div>
                     </a>
-                    <a href="#" class="activites-a">
-                        <article class="activites-cards">
-                            <img src="./images/activites/kilyan-sockalingum.jpg" class="img-cards" alt="Image des falaises des calanques de marseille plongeant dans la mer">
-                            <h3 class="card-title">Parc national des Calanques</h3>
-                        </article>
+                    <a href="#" class="activites-cards">
+                        <img src="./images/activites/kilyan-sockalingum.jpg" class="img-cards" alt="Image des falaises des calanques de marseille plongeant dans la mer">
+                        <div class="activites-div">
+                            <h3 class="card-title activites-title">Parc national des Calanques</h3>
+                        </div>
                     </a>
-                    <a href="#" class="activites-a">
-                        <article class="activites-cards">
-                            <img src="./images/activites/florian-wehde.jpg" class="img-cards" alt="Image de notre Dame de la garde vue d'une rue de Marseille">
-                            <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
-                        </article>
+                    <a href="#" class="activites-cards">
+                        <img src="./images/activites/florian-wehde.jpg" class="img-cards" alt="Image de notre Dame de la garde vue d'une rue de Marseille">
+                        <div class="activites-div">
+                            <h3 class="card-title activites-title">Notre-Dame-de-la-Garde</h3>
+                        </div>
                     </a>
                 </div>
             </section>
         </main>
-        <footer>
-            <section class="section-footer">
-                <div class="menu-footer">
+        <footer class="section-footer-background display-flex">
+                <div class="menu-footer display-flex">
                     <h2 class="footer-h2">À propos</h2>
                     <a href="#">Fonctionnement du site</a>
                     <a href="#">Conditions générales</a>
                     <a href="#">Données et confidentialité</a>
                 </div>
-                <div class="menu-footer">
+                <div class="menu-footer display-flex">
                     <h2 class="footer-h2">Nos hébergements</h2>
                     <a href="#">Charte qualité</a>
                     <a href="#">Proposer votre hôtel</a>
                 </div>
-                <div class="menu-footer">
+                <div class="menu-footer display-flex">
                     <h2 class="footer-h2">Assistance</h2>
                     <a href="#">Centre d’aide</a>
                     <a href="#">Nous contacter</a>
                 </div>
-            </section>
         </footer>
     </div>
 </body>
