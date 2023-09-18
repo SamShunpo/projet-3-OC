@@ -51,7 +51,7 @@ a {
 }
 
 .euro {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .neutral-star {
@@ -80,6 +80,15 @@ a {
     margin: 0;
 }
 
+.titre-18px-700 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -98,14 +107,17 @@ a {
     flex-direction: column;
 }
 
+.hebergements-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
 .hebergements-cards {
     gap: 4px;
     padding-bottom: 15px;
 }
 
-.hebergement-section-cards {
-    flex-wrap: wrap;
-}
 
 .hebergements-img-cards {
     width: 100%;
