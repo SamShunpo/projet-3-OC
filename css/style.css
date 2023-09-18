@@ -16,17 +16,13 @@
 body {
     display: flex;
     justify-content: center;
-    padding: 0px 50px 0px 50px;
 }
 
 .main-container {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
-    gap: 35px;
+    max-width: 1440px;
 }
 
 a {
@@ -35,7 +31,6 @@ a {
 }
 
 .section-title {
-    margin: 0;
     font-size: 22px;
     align-self: stretch;
 }
@@ -63,7 +58,7 @@ a {
     color: var(--main-bg-color)
 }
 
-.display-flex{
+.display-flex {
     display: flex;
     align-items: flex-start;
     align-self: stretch;
@@ -71,6 +66,18 @@ a {
 
 .gap-30 {
     gap: 30px;
+}
+
+.gap-35 {
+    gap: 35px;
+}
+
+.padding-30 {
+    padding: 30px;
+}
+
+.margin-0 {
+    margin: 0;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -81,14 +88,38 @@ a {
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
+    border-radius: 15px;
     box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    flex-direction: column;
+}
+
+.hebergements-cards {
+    gap: 4px;
+    padding-bottom: 15px;
+}
+
+.hebergement-section-cards {
+    flex-wrap: wrap;
+}
+
+.hebergements-img-cards {
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 5px;
+}
+
+.hebergements-div {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 10px;
 }
 
 /****** Populaires ***********/
@@ -128,18 +159,15 @@ a {
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
-    margin: 0;
-}
-
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
 
 /***** Activités ******/
 .activites-section{
-    padding: 30px;
     flex-direction: column;
+    margin-top: 35px;
+    padding: 30px;
 }
 
 .activites-cards {
@@ -148,32 +176,27 @@ a {
     height: 439px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex: 1;
+    background-color: white;
 }
 
-.img-cards {
+.activites-img-cards {
     border-radius: 20px 20px 0 0;
     height: 380px;
     width: 100%;
     object-fit: cover;
 }
 
-.activites-div {
-    padding: 20px 19px;
-    display: flex;
-    background-color: white;
-    border-radius: 0 0 20px 20px;
-    align-self: stretch;
-}
-
 .activites-title {
     margin: 0;
+    padding: 20px 19px;
 }
 
 /*footer*/
 .section-footer-background {
     background-color: #F2F2F2;
+    margin-top: 35px;
 }
 
 .menu-footer {
