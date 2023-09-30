@@ -164,11 +164,10 @@ h1 {
     display: flex;
     flex-direction: row;
     height: 49px;
-    align-items: center;
 }
 
 .label-search {
-    width: 50px;
+    min-width: 50px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -193,8 +192,22 @@ h1 {
     color: white;
     padding: 15px 16px 15px 16px;
     border-radius: 0 15px 15px 0;
-    height: 49px;
+    height: 100%;
     border: none;
+}
+
+.div-search {
+    display: none;
+    background-color: #0065FC;
+    max-width: 49px;
+    padding: 15px 16px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: -20px;
+}
+
+.icon-search {
+    color: white;
 }
 
 /****** filtres ******/
@@ -444,30 +457,47 @@ h1 {
     .header-index {
         flex-direction: column;
         align-items: center;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .nav-header-index {
         margin: 0;
         width: 100%;
-        justify-content:space-around;
+        border-bottom: 2px solid rgba(242, 242, 242, 1);
     }
 
     .a-nav-header-index {
-        align-items: flex-start;
         border-bottom: 2px solid white;
         border-top: none;
         transition: all 0.3s ease;
+        width: 50%;
+        text-align: center;
+        display: inline-block;
     }
 
     .a-nav-header-index:hover {
         border-top: none;
         border-bottom: 2px solid #0065FC;
     }
+
     /****** filtres/recherche ******/
     .display-column {
         padding: 0 20px 0 20px;
     }
-   
+
+    .div-title-form {
+        padding: 0;
+    }
+
+    .btn-search {
+        display: none;
+    }
+
+    .div-search {
+        display: block;
+    }
+
     .div-cta-filtre {
         flex-wrap: wrap;
     }
@@ -476,9 +506,13 @@ h1 {
         font-size: 14px;
     }
 
+    .button-filtre {
+        flex: 1 1 0;
+    }
+
 
     /****** populaire ******/
-     .populaires {
+    .populaires {
         background-color: rgba(242, 242, 242, 1);
         padding: 30px 20px 30px 20px;
         margin-top: 0;
