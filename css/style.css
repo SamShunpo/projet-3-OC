@@ -149,7 +149,7 @@ h1 {
 }
 
 .a-nav-header-index:hover {
-    border-top: 2px solid #0065FC;
+    border-top: 2px solid var(--main-color);
     color: #0065FC;
 }
 
@@ -171,7 +171,7 @@ h1 {
     align-items: center;
     display: flex;
     justify-content: center;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     border-radius: 15px 0 0 15px;
     height: 100%;
 }
@@ -180,7 +180,7 @@ h1 {
     height: 100%;
     padding-left: 24px;
     padding-right: 24px;
-    border: 1px solid #F2F2F2;
+    border: 1px solid var(--main-bg-color);
 }
 
 .input-search:focus {
@@ -188,7 +188,7 @@ h1 {
 }
 
 .btn-search {
-    background-color: #0065FC;
+    background-color: var(--main-color);
     color: white;
     padding: 15px 16px 15px 16px;
     border-radius: 0 15px 15px 0;
@@ -198,7 +198,7 @@ h1 {
 
 .div-search {
     display: none;
-    background-color: #0065FC;
+    background-color: var(--main-color);
     max-width: 49px;
     padding: 15px 16px;
     border-radius: 15px;
@@ -368,7 +368,7 @@ h1 {
 
 /*footer*/
 .section-footer-background {
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     margin-top: 35px;
 }
 
@@ -439,6 +439,11 @@ h1 {
     .activites-img-cards {
         height: 200px;
     }
+
+    .activites-title {
+        padding: 10px 5px;
+        text-align: center;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -478,7 +483,7 @@ h1 {
 
     .a-nav-header-index:hover {
         border-top: none;
-        border-bottom: 2px solid #0065FC;
+        border-bottom: 2px solid var(--main-color);
     }
 
     /****** filtres/recherche ******/
@@ -488,6 +493,10 @@ h1 {
 
     .div-title-form {
         padding: 0;
+    }
+
+    .input-search {
+        width: 100%;
     }
 
     .btn-search {
@@ -500,6 +509,8 @@ h1 {
 
     .div-cta-filtre {
         flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
     }
 
     .font-size-17-700 {
@@ -507,7 +518,7 @@ h1 {
     }
 
     .button-filtre {
-        flex: 1 1 0;
+        width: 48%;
     }
 
 
@@ -571,5 +582,10 @@ h1 {
     /****** footer ******/
     .section-footer-background {
         flex-direction: column;
+    }
+
+    .activites-title {
+        padding: 20px 19px;
+        text-align: left;
     }
 }
